@@ -1,0 +1,10 @@
+configmaps/*
+!configmaps/*.example
+
+configs/*
+!configs/*.example
+
+service/*
+!service/*.example
+
+fofapro-fapro-pod.yaml

@@ -1,0 +1,338 @@
+{
+    "version": "0.43",
+    "hostname": "",
+    "network": "127.0.0.1/32",
+    "network_build": "localhost",
+    "geo_db": "",
+    "exclusions": null,
+    "storage": null,
+    "use_logq": false,
+    "syn_dev": "",
+    "icmp_dev": "",
+    "udp_dev": "",
+    "cert_name": "",
+    "hosts": [
+        {
+            "ip": "0.0.0.0",
+            "handlers": [
+                {
+                    "handler": "bacnet",
+                    "port": 47808,
+                    "params": {
+                        "description": "For bacnet stack",
+                        "device_id": 1234,
+                        "firmware_ver": "0.9.1",
+                        "location": "SE2-315",
+                        "model_name": "Bacnet Device",
+                        "object_name": "Bacnet Device",
+                        "software_ver": "1.0",
+                        "vender_id": 260,
+                        "vender_name": "BACnet Stack at SourceForge"
+                    }
+                },
+                {
+                    "handler": "dcerpc",
+                    "port": 135,
+                    "params": {
+                        "accounts": [
+                            "administrator:123456"
+                        ],
+                        "domain_name": "DESKTOP-Q1Test"
+                    }
+                },
+                {
+                    "handler": "dns",
+                    "port": 53,
+                    "params": {
+                        "appname": "domain"
+                    }
+                },
+                {
+                    "handler": "eip",
+                    "port": 44818,
+                    "params": {
+                        "ip": "192.168.1.11",
+                        "product_name": "1766-L32BXBA C/21.02"
+                    }
+                },
+                {
+                    "handler": "elasticsearch",
+                    "port": 9200
+                },
+                {
+                    "handler": "ftp",
+                    "port": 21,
+                    "params": {
+                        "accounts": [
+                            "ftp:123456"
+                        ],
+                        "welcome_message": "Welcome to the FTP Server"
+                    }
+                },
+                {
+                    "handler": "http",
+                    "port": 80,
+                    "params": {
+                        "body": "It works.",
+                        "fs_path": "apachefs",
+                        "headers": [],
+                        "server_version": "Apache",
+                        "ssl": false
+                    }
+                },
+                {
+                    "handler": "iec104",
+                    "port": 2404
+                },
+                {
+                    "handler": "imap",
+                    "port": 143,
+                    "params": {
+                        "accounts": [
+                            "admin:123456",
+                            "guest:guest"
+                        ],
+                        "allow_insecure_auth": false,
+                        "server": "Dovecot",
+                        "ssl": false
+                    }
+                },
+                {
+                    "handler": "memcache",
+                    "port": 11211,
+                    "params": {
+                        "server_version": "1.5.16"
+                    }
+                },
+                {
+                    "handler": "modbus",
+                    "port": 502,
+                    "params": {
+                        "server_info": [
+                            "Schneider Electric",
+                            "ATV630D22N4",
+                            "0204",
+                            "Device Info test"
+                        ]
+                    }
+                },
+                {
+                    "handler": "mqtt",
+                    "port": 1883,
+                    "params": {
+                        "accounts": null,
+                        "ssl": false
+                    }
+                },
+                {
+                    "handler": "mysql",
+                    "port": 3306,
+                    "params": {
+                        "accounts": [
+                            "root:123456"
+                        ],
+                        "db_name": "shop",
+                        "server_version": "5.7.9",
+                        "system_variables": [
+                            "datadir:/usr/local/var/mysql/"
+                        ],
+                        "table_name": "users"
+                    }
+                },
+                {
+                    "handler": "ntp",
+                    "port": 123
+                },
+                {
+                    "handler": "pop3",
+                    "port": 110,
+                    "params": {
+                        "accounts": [
+                            "admin:123456",
+                            "guest:guest"
+                        ],
+                        "server_version": "Dovecot",
+                        "ssl": false
+                    }
+                },
+                {
+                    "handler": "portmap",
+                    "port": 111,
+                    "params": {
+                        "mapping_table": [
+                            "100000,4,tcp,111",
+                            "100000,3,tcp,111",
+                            "100000,2,tcp,111",
+                            "100000,4,udp,111",
+                            "100000,3,udp,111",
+                            "100000,2,udp,111"
+                        ]
+                    }
+                },
+                {
+                    "handler": "postgres",
+                    "port": 5432,
+                    "params": {
+                        "accounts": [
+                            "postgres:123456"
+                        ],
+                        "auth": "plain",
+                        "server_version": "14.0"
+                    }
+                },
+                {
+                    "handler": "rdp",
+                    "port": 3389,
+                    "params": {
+                        "accounts": [
+                            "administrator:123456"
+                        ],
+                        "auth": false,
+                        "domain_name": "DESKTOP-Q1Test",
+                        "image": "rdp.jpg",
+                        "sec_layer": "auto"
+                    }
+                },
+                {
+                    "handler": "redis",
+                    "port": 6379,
+                    "params": {
+                        "server_version": "3.2.3"
+                    }
+                },
+                {
+                    "handler": "rtsp",
+                    "port": 554,
+                    "params": {
+                        "server": ""
+                    }
+                },
+                {
+                    "handler": "s7",
+                    "port": 102
+                },
+                {
+                    "handler": "sip",
+                    "port": 5060,
+                    "params": {
+                        "body": ""
+                    }
+                },
+                {
+                    "handler": "smb",
+                    "port": 445,
+                    "params": {
+                        "accounts": [
+                            "administrator:123456"
+                        ],
+                        "domain_name": "NASE83ACA",
+                        "server_name": "NASE83ACA",
+                        "shares": [
+                            "admin:Home directory",
+                            "public:Public directory"
+                        ]
+                    }
+                },
+                {
+                    "handler": "smtp",
+                    "port": 25,
+                    "params": {
+                        "accounts": [
+                            "admin:123456"
+                        ],
+                        "appname": "ESMTP",
+                        "auth": false,
+                        "banner": "Postfix (Ubuntu)",
+                        "hostname": "smtp.fapro.com",
+                        "ssl": false,
+                        "timeout": 3
+                    }
+                },
+                {
+                    "handler": "snmp",
+                    "port": 161,
+                    "params": {
+                        "accounts": [
+                            "admin:123456"
+                        ],
+                        "engineId": "snmp_Server",
+                        "enterpriseId": 20408
+                    }
+                },
+                {
+                    "handler": "ssdp",
+                    "port": 1900,
+                    "params": {
+                        "dev_location": "http://192.168.0.1:54383/rootDesc.xml",
+                        "dev_type": "upnp:rootdevice",
+                        "dev_usn": "uuid:00000000-0000-0000-0000-000000000000::upnp:rootdevice",
+                        "max_age": 1800,
+                        "server_version": "OS 1.0 UPnP/1.0 Realtek/V1.3"
+                    }
+                },
+                {
+                    "handler": "ssh",
+                    "port": 22,
+                    "params": {
+                        "accounts": [
+                            "root:123456:/root:0"
+                        ],
+                        "prompt": "$ ",
+                        "server_version": "SSH-2.0-OpenSSH_7.4"
+                    }
+                },
+                {
+                    "handler": "tcp_echo",
+                    "port": 1234
+                },
+                {
+                    "handler": "tcp_forward",
+                    "port": 8079,
+                    "params": {
+                        "target": "www.bing.com:80"
+                    }
+                },
+                {
+                    "handler": "telnet",
+                    "port": 23,
+                    "params": {
+                        "password": "123456",
+                        "prompt": "$ ",
+                        "ssl": false
+                    }
+                },
+                {
+                    "handler": "tns",
+                    "port": 1521,
+                    "params": {
+                        "VSNNUM": "186647040",
+                        "accounts": [
+                            "system:oracle"
+                        ],
+                        "banner": "x86_64/Linux 2.4.xx",
+                        "newmode": false,
+                        "sids": [
+                            "ORCL",
+                            "XE",
+                            "oracle"
+                        ],
+                        "version": "Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production"
+                    }
+                },
+                {
+                    "handler": "udp_echo",
+                    "port": 1234
+                },
+                {
+                    "handler": "vnc",
+                    "port": 5900,
+                    "params": {
+                        "challenge": "0123456789abcdef",
+                        "password": "123456"
+                    }
+                }
+            ]
+        }
+    ],
+    "templates": null
+}
