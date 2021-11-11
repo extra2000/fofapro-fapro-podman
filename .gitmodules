@@ -1,0 +1,3 @@
+[submodule "src/fofapro-fapro"]
+	path = src/fofapro-fapro
+	url = https://github.com/extra2000/fofapro-fapro.git
